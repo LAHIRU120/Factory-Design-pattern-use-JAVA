@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="829.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="lk.ijse.pos.view.controller.DashbordController">
+    <stylesheets>
+        <URL value="@/lk/ijse/pos/view/css/dashbord.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="31.0" layoutY="55.0" prefHeight="80.0" prefWidth="271.0" style="-fx-background-color: lightblue;" text="Customer Amount" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="31.0" layoutY="230.0" prefHeight="80.0" prefWidth="271.0" style="-fx-background-color: darkblue;" text="Item Amount" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="31.0" layoutY="386.0" prefHeight="80.0" prefWidth="271.0" style="-fx-background-color: orange;" text="Orders Amount" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="302.0" layoutY="55.0" prefHeight="80.0" prefWidth="73.0" style="-fx-background-color: darkblue;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="302.0" layoutY="230.0" prefHeight="80.0" prefWidth="73.0" style="-fx-background-color: lightblue;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="302.0" layoutY="386.0" prefHeight="80.0" prefWidth="73.0" style="-fx-background-color: darkorange;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <StackedBarChart layoutX="408.0" layoutY="57.0" prefHeight="409.0" prefWidth="388.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis prefHeight="398.0" prefWidth="28.0" side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+   </children>
+</AnchorPane>
